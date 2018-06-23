@@ -1,3 +1,4 @@
+#10進数を16進数に変換するプログラム
 def to_hex(r, g, b)
     #"#" + r.to_s(16).rjust(2, "0") + g.to_s(16).rjust(2, "0") + b.to_s(16).rjust(2, "0")
     [r, g, b].inject("#") do |hex, n|
@@ -6,6 +7,7 @@ def to_hex(r, g, b)
 end
 
 
+#16進数を10進数に変換するプログラム
 def to_ints(hex)
     ints = []
     # 配列は0からスタート
